@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.brand {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+
+.nav-links {
+    display: inline-block;
+    float: right;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover{
+    color: orange;
+}
+
+.header {
+    background-image: url(./Images/slider1.jpg); 
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.overlay1 {
+    padding: 20px;
+}
+
+.header .overlay1 h1 {
+    font-size: 3rem;
+}
+
+.header .overlay1 p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.overlay1 .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.overlay1 .btn:hover {
+    background-color: red;
+}
+
+
+
+
+.services {
+    background-color: #f8f9fa;
+}
+
+.service-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    font-size: 3rem;
+    color: #ff7f50;
+    background: #ffe5d9;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    transition: 0.3s;
+}
+
+.service-item:hover .icon-box {
+    background: #ff7f50;
+    color: white;
+}
+
+
+
+.portfolio {
+    background-color: #f8f9fa;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.portfolio-item:hover .overlay {
+    background: rgba(255, 165, 0, 0.9);
+}
+
+
+.team {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.team-member {
+    width: 25%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 95%;
+    }
+
+    .nav-links {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header {
+        min-height: 400px;
+    }
+
+    .header .overlay1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .header .overlay1 p {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .brand {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .header {
+        min-height: 300px;
+        padding: 20px;
+    }
+
+    .header .overlay1 h1 {
+        font-size: 2rem;
+    }
+
+    .header .overlay1 p {
+        font-size: 1rem;
+    }
+
+    .overlay1 .btn {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .service-item {
+        padding: 20px;
+    }
+
+    .icon-box {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+    }
+
+    .portfolio h2 {
+        font-size: 2rem;
+    }
+
+    .portfolio-item img {
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+    .header {
+        min-height: 250px;
+    }
+
+    .header .overlay1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .header .overlay1 p {
+        font-size: 0.9rem;
+    }
+
+    .overlay1 .btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .portfolio-item img {
+        height: 150px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .team-member {
+        width: 45%; 
+    }
+
+    .team h2 {
+        font-size: 2rem;
+    }
+
+    .team-member h3 {
+        font-size: 1.3rem;
+    }
+
+    .team-member p {
+        font-size: 0.9rem;
+    }
+
+    .team-member img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%; 
+    }
+
+    .team h2 {
+        font-size: 1.8rem;
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .team-member h3 {
+        font-size: 1.2rem;
+    }
+
+    .team-member p {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 479px) {
+    .team-member {
+        width: 90%; 
+        padding: 15px;
+    }
+
+    .team h2 {
+        font-size: 1.5rem;
+    }
+
+    .team-member img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .team-member h3 {
+        font-size: 1rem;
+    }
+
+    .team-member p {
+        font-size: 0.75rem;
+    }
+}
